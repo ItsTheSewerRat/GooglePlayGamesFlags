@@ -1,6 +1,8 @@
 # Google Play Games Flags
 
-Small helper for launching Google Play Games on PC with local Phenotype flag overrides.
+Small unofficial helper for launching Google Play Games on PC with local Phenotype flag overrides.
+
+This is unsupported and uses internal Google Play Games flags. It does not modify or redistribute Google Play Games files, but using internal flags may conflict with Google's terms. Use at your own risk.
 
 The included `flags.json` is for fixing the missing hide-sidebar button by enabling the sidebar collapsibility flags.
 
@@ -22,12 +24,12 @@ The shortcut launches Google Play Games with the encrypted version of `flags.jso
 
 Google does not provide a public, stable list of Google Play Games Phenotype flags. Names can change between versions.
 
-Look in the installed service folder:
+On a default install, flag names are in:
 
 ```text
-C:\Program Files\Google\Play Games\current\service
+C:\Program Files\Google\Play Games\current\service\Phenotype.dll
 ```
 
-`Phenotype.dll` contains the flag names. Open it with ILSpy or dnSpy, then add discovered flags to `flags.json` under `ForcedFlags`.
+Inspecting Google binaries may be restricted by Google's terms. Only use extra flags if you accept that risk.
 
 The script only needs elevated privileges if it cannot write the encrypted flags file into the Google Play Games folder. In that case, it relaunches itself as administrator.
