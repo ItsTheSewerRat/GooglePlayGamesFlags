@@ -1,0 +1,13 @@
+{
+  "ForcedFlags": {
+    "sidebarFeature": {
+      "enableSidebar": true,
+      "enableSidebarCollapsibility": true
+    },
+    "kiwiEmulatorWindowFeature": {
+      "enableUnifiedGameplayWindow": true
+    }
+  },
+  "ForcedExperimentTags": [],
+  "EnvironmentVariableOverrides": {}
+}

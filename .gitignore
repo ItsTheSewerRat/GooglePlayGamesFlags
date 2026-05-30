@@ -1,0 +1,9 @@
+# Generated locally
+*.encrypted
+*.lnk
+
+# Local/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
